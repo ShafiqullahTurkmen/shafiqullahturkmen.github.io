@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+body {
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(231, 229, 229);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(57, 57, 57);
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 10px 0 10px 0;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 20px 0 10px 0;
+}
+
+p {
+    margin: 0px;
+    font-size: 20px;
+}
+
+a {
+    color: rgb(144, 61, 223);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.dark a {
+    color:rgb(241, 157, 241);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    position: relative;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: inset -6px -7px 4px rgb(195 195 195 / 90%);
+    transition: 0.5s;
+}
+
+.dark {
+    background-color: rgb(54, 54, 54);
+    /* transition: 0.5s; */
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+    /* transition: 0.5s; */
+}
+
+.dark > * {
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-text {
+    padding: 30px;
+}
+
+.square {
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    background-color: rgb(144, 155, 150);
+    text-align: center;
+}
+
+.dark .square {
+    background-color: rgb(77, 77, 77);
+}
+
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#lingo {
+    background-image: url(images/html-square.png);
+    background-size: cover;
+}
+
+#shoppa {
+    background-image: url(images/css-square.png);
+    background-size: cover;
+}
+
+#paypay {
+    background-image: url(images/javascript-square.png);
+    background-size: cover;
+}
+
+#weathery {
+    background-image: url(images/react-square.png);
+    background-size: cover;
+}
+
+.hero-image {
+    position: relative;
+    width: 50%;
+    height: 350px;
+}
+
+.cube {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-25deg) skew(25deg);
+}
+
+.cube:before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 100%;
+    transform: skewY(-45deg);
+    left: -20px;
+    bottom: -10px;
+}
+
+.cube:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 21px;
+    transform: skewX(-45deg);
+    left: -10px;
+    bottom: -20px;
+}
+
+#html {
+    left: 100px;
+    bottom: 80px;
+    background-image: url(images/html-square.png);
+    background-size: cover;
+    background-color: rgb(167, 94, 236);
+    box-shadow: -60px 60px 20px rgb(197, 195, 195);
+}
+
+#html:before {
+    background-color: rgb(163, 128, 196);
+}
+
+#html:after {
+    background-color: rgb(194, 172, 214);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 100px 30px;
+    background-color: rgb(136, 136, 136);
+}
+
+.dark footer{
+    background-color: rgb(28, 28, 28);
+}
+
+@media only screen and (min-width: 970px) {
+    .main-text {
+        width: 50%;
+    }
+    .square {
+        width: 48%;
+        margin: 1%;
+        height: 600px;
+    }
+}
