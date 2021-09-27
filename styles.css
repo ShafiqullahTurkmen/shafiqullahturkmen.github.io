@@ -170,8 +170,8 @@ header {
 }
 
 #html {
-    left: 100px;
-    bottom: 80px;
+    left: 250px;
+    bottom: 240px;
     background-image: url(images/html-square.png);
     background-size: cover;
     background-color: rgb(167, 94, 236);
@@ -185,6 +185,58 @@ header {
 #html:after {
     background-color: rgb(194, 172, 214);
 }
+
+#css {
+    left: 100px;
+    bottom: 80px;
+    background-image: url(images/css-square.png);
+    background-size: cover;
+    background-color: rgb(36, 194, 194);
+    box-shadow: -60px 60px 20px rgb(197, 195, 195);
+}
+
+#css:before {
+    background-color: rgb(104, 221, 221);
+}
+
+#css:after {
+    background-color: rgb(164, 221, 221);
+}
+
+#react {
+    right: 100px;
+    bottom: 80px;
+    background-image: url(images/react-square.png);
+    background-size: cover;
+    background-color: rgb(36, 123, 194);
+    box-shadow: -60px 60px 20px rgb(197, 195, 195);
+}
+
+#react:before {
+    background-color: rgb(66, 138, 197);
+}
+
+#react:after {
+    background-color: rgb(159, 188, 212);
+}
+
+#javascript {
+    top: 350px;
+    right: 250px;
+    background-image: url(images/javascript-square.png);
+    background-size: cover;
+    background-color: rgb(199, 155, 11);
+    box-shadow: -60px 60px 20px rgb(197, 195, 195);
+}
+
+#javascript:before {
+    background-color: rgb(228, 184, 39);
+}
+
+#javascript:after {
+    background-color: rgb(226, 198, 107);
+}
+
 
 footer {
     display: flex;
