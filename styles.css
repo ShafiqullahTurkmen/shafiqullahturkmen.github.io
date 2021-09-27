@@ -29,7 +29,7 @@ p {
 }
 
 a {
-    color: rgb(144, 61, 223);
+    color: rgb(83, 47, 116);
     font-size: 20px;
     text-decoration: none;
     font-weight: 100;
@@ -82,7 +82,6 @@ header {
 
 .dark .flicker {
     transform: translateX(40px);
-    /* transition: 0.5s; */
 }
 
 .dark > * {
@@ -93,10 +92,14 @@ header {
     height: 80vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
 }
 
 .main-text {
     padding: 30px;
+    margin-bottom: 100px;
 }
 
 .square {
@@ -140,6 +143,8 @@ header {
     position: relative;
     width: 50%;
     height: 350px;
+    display: block;
+    margin-bottom: 100px;
 }
 
 .cube {
@@ -170,12 +175,13 @@ header {
 }
 
 #html {
-    left: 250px;
+    left: 300px;
     bottom: 240px;
     background-image: url(images/html-square.png);
     background-size: cover;
     background-color: rgb(167, 94, 236);
     box-shadow: -60px 60px 20px rgb(197, 195, 195);
+    transition: 0.5s;
 }
 
 #html:before {
@@ -186,6 +192,10 @@ header {
     background-color: rgb(194, 172, 214);
 }
 
+.dark #html {
+    box-shadow: none;
+}
+
 #css {
     left: 100px;
     bottom: 80px;
@@ -193,6 +203,7 @@ header {
     background-size: cover;
     background-color: rgb(36, 194, 194);
     box-shadow: -60px 60px 20px rgb(197, 195, 195);
+    transition: 0.5s;
 }
 
 #css:before {
@@ -203,6 +214,10 @@ header {
     background-color: rgb(164, 221, 221);
 }
 
+.dark #css {
+    box-shadow: none;
+}
+
 #react {
     right: 100px;
     bottom: 80px;
@@ -210,6 +225,7 @@ header {
     background-size: cover;
     background-color: rgb(36, 123, 194);
     box-shadow: -60px 60px 20px rgb(197, 195, 195);
+    transition: 0.5s;
 }
 
 #react:before {
@@ -220,23 +236,31 @@ header {
     background-color: rgb(159, 188, 212);
 }
 
+.dark #react {
+    box-shadow: none;
+}
+
 #javascript {
     top: 350px;
-    right: 250px;
+    right: 290px;
     background-image: url(images/javascript-square.png);
     background-size: cover;
-    background-color: rgb(199, 155, 11);
+    background-color: rgb(23, 163, 121);
     box-shadow: -60px 60px 20px rgb(197, 195, 195);
+    transition: 0.5s;
 }
 
 #javascript:before {
-    background-color: rgb(228, 184, 39);
+    background-color: rgb(59, 141, 116);
 }
 
 #javascript:after {
-    background-color: rgb(226, 198, 107);
+    background-color: rgb(156, 219, 200);
 }
 
+.dark #javascript {
+    box-shadow: none;
+}
 
 footer {
     display: flex;
@@ -257,5 +281,11 @@ footer {
         width: 48%;
         margin: 1%;
         height: 600px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .hero-image {
+        display: none;
     }
 }
